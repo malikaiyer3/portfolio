@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/malika-portfolio/static/css/main.aa93e596.css",
-    "main.js": "/malika-portfolio/static/js/main.64cbcb2d.js",
+    "main.css": "/malika-portfolio/static/css/main.f63fb37e.css",
+    "main.js": "/malika-portfolio/static/js/main.d94efbc4.js",
     "static/js/787.4ef7427d.chunk.js": "/malika-portfolio/static/js/787.4ef7427d.chunk.js",
     "static/media/Sobiscuit.ttf": "/malika-portfolio/static/media/Sobiscuit.82901903bec412a9b6e8.ttf",
     "index.html": "/malika-portfolio/index.html",
-    "main.aa93e596.css.map": "/malika-portfolio/static/css/main.aa93e596.css.map",
-    "main.64cbcb2d.js.map": "/malika-portfolio/static/js/main.64cbcb2d.js.map",
+    "main.f63fb37e.css.map": "/malika-portfolio/static/css/main.f63fb37e.css.map",
+    "main.d94efbc4.js.map": "/malika-portfolio/static/js/main.d94efbc4.js.map",
     "787.4ef7427d.chunk.js.map": "/malika-portfolio/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa93e596.css",
-    "static/js/main.64cbcb2d.js"
+    "static/css/main.f63fb37e.css",
+    "static/js/main.d94efbc4.js"
   ]
 }
