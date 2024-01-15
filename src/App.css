@@ -24,6 +24,8 @@
     font-size: calc(40px + 2vmin);
     font-family: "Sobiscuit";
     color: white;
+    /*animation: bounceIn;
+    animation-duration: 2s;*/
 }
 
 .App-link {
