@@ -6,7 +6,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (26 ms)
+  ✕ renders the course name somewhere (41 ms)
 
   ● renders the course name somewhere
 
@@ -18,14 +18,99 @@ FAIL src/App.test.tsx
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
         [36m>[39m
+          [36m<nav[39m
+            [33mclass[39m=[32m"navbar navbar-light bg-light px-3"[39m
+            [33mid[39m=[32m"navbar-example2"[39m
+          [36m>[39m
+            [36m<a[39m
+              [33mclass[39m=[32m"navbar-brand"[39m
+              [33mhref[39m=[32m"#"[39m
+            [36m>[39m
+              [0mNavbar[0m
+            [36m</a>[39m
+            [36m<ul[39m
+              [33mclass[39m=[32m"nav nav-pills"[39m
+            [36m>[39m
+              [36m<li[39m
+                [33mclass[39m=[32m"nav-item"[39m
+              [36m>[39m
+                [36m<a[39m
+                  [33mclass[39m=[32m"nav-link"[39m
+                  [33mhref[39m=[32m"#scrollspyHeading1"[39m
+                [36m>[39m
+                  [0mFirst[0m
+                [36m</a>[39m
+              [36m</li>[39m
+              [36m<li[39m
+                [33mclass[39m=[32m"nav-item"[39m
+              [36m>[39m
+                [36m<a[39m
+                  [33mclass[39m=[32m"nav-link"[39m
+                  [33mhref[39m=[32m"#scrollspyHeading2"[39m
+                [36m>[39m
+                  [0mSecond[0m
+                [36m</a>[39m
+              [36m</li>[39m
+              [36m<li[39m
+                [33mclass[39m=[32m"nav-item"[39m
+              [36m>[39m
+                [36m<a[39m
+                  [33mclass[39m=[32m"nav-link"[39m
+                  [33mhref[39m=[32m"#scrollspyHeading3"[39m
+                [36m>[39m
+                  [0mThird[0m
+                [36m</a>[39m
+              [36m</li>[39m
+              [36m<li[39m
+                [33mclass[39m=[32m"nav-item"[39m
+              [36m>[39m
+                [36m<a[39m
+                  [33mclass[39m=[32m"nav-link"[39m
+                  [33mhref[39m=[32m"#scrollspyHeading4"[39m
+                [36m>[39m
+                  [0mFourth[0m
+                [36m</a>[39m
+              [36m</li>[39m
+            [36m</ul>[39m
+          [36m</nav>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"scrollspy-example"[39m
+            [33mdata-bs-offset[39m=[32m"0"[39m
+            [33mdata-bs-spy[39m=[32m"scroll"[39m
+            [33mdata-bs-target[39m=[32m"#navbar-example2"[39m
+            [33mtabindex[39m=[32m"0"[39m
+          [36m/>[39m
           [36m<header[39m
             [33mclass[39m=[32m"App-header"[39m
           [36m>[39m
-            [0mWelcome to Malika Iyer’s Personal Website![0m
+            [36m<div[39m
+              [33mclass[39m=[32m"animate__animated animate__bounceIn"[39m
+              [33mstyle[39m=[32m"animation-duration: 2s;"[39m
+            [36m>[39m
+              [0mWelcome to Malika Iyer’s Personal Website![0m
+            [36m</div>[39m
           [36m</header>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"content"[39m
+          [36m>[39m
+            [36m<section[39m
+              [33mid[39m=[32m"scrollspyHeading1"[39m
+            [36m>[39m
+              [36m<h4>[39m
+                [0mFirst Heading[0m
+              [36m</h4>[39m
+              [36m<p>[39m
+                [0mAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat[0m
+              [36m</p>[39m
+            [36m</section>[39m
+            [36m<section[39m
+              [33mid[39m=[32m"scrollspyHeading2"[39m
+            [36m>[39m
+              [36m<h4>[39m
+                [0mSecond Heading[0m
+              [36m</h4>[39m
+              [36m<p>[39m
+                [0mAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impe...
 
        5 | test("renders the course name somewhere", () => {
        6 |     render(<App />);
@@ -45,14 +130,17 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
-----------|---------|----------|---------|---------|-------------------
-File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------|---------|----------|---------|---------|-------------------
-All files |     100 |      100 |     100 |     100 |                   
- App.tsx  |     100 |      100 |     100 |     100 |                   
-----------|---------|----------|---------|---------|-------------------
+----------------|---------|----------|---------|---------|-------------------
+File            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------|---------|----------|---------|---------|-------------------
+All files       |     100 |      100 |     100 |     100 |                   
+ src            |     100 |      100 |     100 |     100 |                   
+  App.tsx       |     100 |      100 |     100 |     100 |                   
+ src/Components |     100 |      100 |     100 |     100 |                   
+  NavBar.tsx    |     100 |      100 |     100 |     100 |                   
+----------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        1.234 s
+Time:        1.435 s
 Ran all test suites.
