@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React from "react";
 import "./App.css";
-import styled, { css, keyframes } from "styled-components";
+import styled, { css } from "styled-components";
 import { Link } from "react-scroll";
 import { useInView } from "react-intersection-observer";
 import pyIcon from "./images/icons8-python-50.png";
@@ -9,7 +9,7 @@ import gitIcon from "./images/icons8-git.png";
 import javaIcon from "./images/icons8-java-50.png";
 import cIcon from "./images/icons8-c-50.png";
 import tsIcon from "./images/icons8-code-50.png";
-import kotIcon from "./images/icons8-kotlin.svg";
+// import kotIcon from "./images/icons8-kotlin.svg";
 import sqlIcon from "./images/icons8-database-administrator-50.png";
 import backgroundImage from "./images/lagos-night.jpeg";
 
@@ -302,12 +302,12 @@ function App(): JSX.Element {
             <Section id="skills" ref={skillsRef} inView={skillsInView}>
                 <h2>Skills</h2>
                 <BoxesContainer>
-                    {skills.map((skill, index) => (
+                    {skills.map((skill, index) => 
                         <Box key={index}>
                             <Icon src={skill.icon} alt="Image" />
                             <Topic>{skill.name}</Topic>
                         </Box>
-                    ))}
+                    )}
                 </BoxesContainer>
             </Section>
             <Section id="projects" ref={projectsRef} inView={projectsInView}>
