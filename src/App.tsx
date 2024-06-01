@@ -4,19 +4,23 @@ import "./App.css";
 import styled, { css, keyframes } from "styled-components";
 import { Link } from "react-scroll";
 import { useInView } from "react-intersection-observer";
-import pyIcon from "./icons8-python.svg";
-import gitIcon from "./icons8-git.svg";
-import javaIcon from "./icons8-java-50.png";
-import cIcon from "./icons8-c-50.png";
-import tsIcon from "./icons8-code-50.png";
-import kotIcon from "./icons8-kotlin.svg";
-import sqlIcon from "./icons8-database-administrator-50.png";
+import pyIcon from "./images/icons8-python-50.png";
+import gitIcon from "./images/icons8-git.png";
+import javaIcon from "./images/icons8-java-50.png";
+import cIcon from "./images/icons8-c-50.png";
+import tsIcon from "./images/icons8-code-50.png";
+import kotIcon from "./images/icons8-kotlin.svg";
+import sqlIcon from "./images/icons8-database-administrator-50.png";
+import backgroundImage from "./images/lagos-night.jpeg";
 
 const Header = styled.header`
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: #095f35;
+    // background-color: #095f35;
+    background-image: url(${backgroundImage});
+    background-size: cover;
+    background-position: center;
     min-height: 40vh;
     display: flex;
     flex-direction: column;
@@ -38,7 +42,7 @@ const HeaderComponent = styled.div`
     height: 70px;
     min-height: 70px;
     width: 100%;
-    background-color: #f0f0f0;
+    background-color: #242526;
     padding: 0 1rem;
     box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.11);
     gap: 20px;
@@ -57,7 +61,7 @@ const NavItem = styled.li`
 
 const NavLink = styled(Link)`
     text-decoration: none;
-    color: #333;
+    color: #faf9f6;
     font-weight: bold;
     padding: 0.5rem;
     transition: color 0.3s ease;
@@ -78,6 +82,10 @@ const Section = styled.section<{ inView: boolean }>`
             opacity: 1;
             transform: translateY(0);
         `}
+    background-color: #2a2a2a; /* Make sure sections have a background to display the shadow */
+    border-radius: 10px; /* Optional: add some rounding to the section corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19); /* Adjust shadow for better visibility */
+    margin-bottom: 20px; /* Add space between sections for shadows to be visible */
 `;
 
 const AboutContainer = styled.p`
@@ -107,7 +115,8 @@ const Box = styled.div`
     text-align: center;
     border-radius: 12px;
     padding: 30px 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    background-color: #333; /* Make sure boxes have a background to display the shadow */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Adjust shadow for better visibility */
     transition: background-color 0.3s, color 0.3s;
 
     &:hover {
@@ -138,7 +147,8 @@ const ProjectContainer = styled.div`
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.11);
+    background-color: #333; /* Make sure project containers have a background to display the shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19); /* Adjust shadow for better visibility */
 `;
 
 const ProjectImage = styled.img`
@@ -253,7 +263,7 @@ function App(): JSX.Element {
                                     to="contact"
                                     duration={300}
                                 >
-                                    Contact Us
+                                    Contact
                                 </NavLink>
                             </NavItem>
                         </NavList>
