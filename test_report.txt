@@ -5,152 +5,357 @@
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+  console.error
+    Warning: React does not recognize the `inView` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `inview` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
+        at section
+        at I (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/styled-components/src/models/StyledComponent.ts:265:26)
+        at div
+        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:196:52)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at validateProperty$1 (node_modules/react-dom/cjs/react-dom.development.js:3513:7)
+      at warnUnknownProperties (node_modules/react-dom/cjs/react-dom.development.js:3559:21)
+      at validateProperties$2 (node_modules/react-dom/cjs/react-dom.development.js:3583:3)
+      at validatePropertiesInDevelopment (node_modules/react-dom/cjs/react-dom.development.js:8765:5)
+      at setInitialProperties (node_modules/react-dom/cjs/react-dom.development.js:9041:5)
+
+  console.error
+    Error: Uncaught [ReferenceError: IntersectionObserver is not defined]
+        at reportException (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)
+        at innerInvokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
+        at invokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
+        at invokeGuardedCallback (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
+        at flushPassiveEffectsImpl (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23574:9)
+        at unstable_runWithPriority (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/scheduler/cjs/scheduler.development.js:468:12) ReferenceError: IntersectionObserver is not defined
+        at createObserver (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/src/observe.ts:71:22)
+        at observe (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/src/observe.ts:144:38)
+        at /home/runner/work/malika-portfolio/malika-portfolio/node_modules/src/useInView.tsx:66:19
+        at invokePassiveEffectCreate (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23487:20)
+        at HTMLUnknownElement.callCallback (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:3945:14)
+        at HTMLUnknownElement.callTheUserObjectsOperation (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+        at innerInvokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+        at invokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
+        at invokeGuardedCallback (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
+        at flushPassiveEffectsImpl (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23574:9)
+        at unstable_runWithPriority (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/scheduler/cjs/scheduler.development.js:468:12)
+        at runWithPriority$1 (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+        at flushPassiveEffects (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23447:14)
+        at Object.<anonymous>.flushWork (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom-test-utils.development.js:992:10)
+        at act (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom-test-utils.development.js:1107:9)
+        at render (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@testing-library/react/dist/pure.js:97:26)
+        at Object.<anonymous> (/home/runner/work/malika-portfolio/malika-portfolio/src/App.test.tsx:6:5)
+        at Promise.then.completed (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/utils.js:391:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/utils.js:316:10)
+        at _callCircusTest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:218:40)
+        at processTicksAndRejections (node:internal/process/task_queues:96:5)
+        at _runTest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:155:3)
+        at _runTestsForDescribeBlock (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:66:9)
+        at run (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:25:3)
+        at runAndTransformResultsToJestFormat (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+        at jestAdapter (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+        at runTestInternal (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-runner/build/runTest.js:389:16)
+        at runTest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-runner/build/runTest.js:475:34)
+        at TestRunner.runTests (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-runner/build/index.js:111:12)
+        at TestScheduler.scheduleTests (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/TestScheduler.js:333:13)
+        at runJest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/runJest.js:404:19)
+        at _run10000 (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/cli/index.js:320:7)
+        at runCLI (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/cli/index.js:173:3)
+        at Object.run (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-cli/build/cli/index.js:155:37)
+
+      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
+      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:70:28)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+
+  console.error
+    Error: Uncaught [ReferenceError: IntersectionObserver is not defined]
+        at reportException (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)
+        at innerInvokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
+        at invokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
+        at invokeGuardedCallback (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
+        at flushPassiveEffectsImpl (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23574:9)
+        at unstable_runWithPriority (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/scheduler/cjs/scheduler.development.js:468:12) ReferenceError: IntersectionObserver is not defined
+        at createObserver (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/src/observe.ts:71:22)
+        at observe (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/src/observe.ts:144:38)
+        at /home/runner/work/malika-portfolio/malika-portfolio/node_modules/src/useInView.tsx:66:19
+        at invokePassiveEffectCreate (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23487:20)
+        at HTMLUnknownElement.callCallback (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:3945:14)
+        at HTMLUnknownElement.callTheUserObjectsOperation (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+        at innerInvokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+        at invokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
+        at invokeGuardedCallback (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
+        at flushPassiveEffectsImpl (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23574:9)
+        at unstable_runWithPriority (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/scheduler/cjs/scheduler.development.js:468:12)
+        at runWithPriority$1 (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+        at flushPassiveEffects (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23447:14)
+        at Object.<anonymous>.flushWork (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom-test-utils.development.js:992:10)
+        at act (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom-test-utils.development.js:1107:9)
+        at render (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@testing-library/react/dist/pure.js:97:26)
+        at Object.<anonymous> (/home/runner/work/malika-portfolio/malika-portfolio/src/App.test.tsx:6:5)
+        at Promise.then.completed (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/utils.js:391:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/utils.js:316:10)
+        at _callCircusTest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:218:40)
+        at processTicksAndRejections (node:internal/process/task_queues:96:5)
+        at _runTest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:155:3)
+        at _runTestsForDescribeBlock (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:66:9)
+        at run (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:25:3)
+        at runAndTransformResultsToJestFormat (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+        at jestAdapter (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+        at runTestInternal (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-runner/build/runTest.js:389:16)
+        at runTest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-runner/build/runTest.js:475:34)
+        at TestRunner.runTests (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-runner/build/index.js:111:12)
+        at TestScheduler.scheduleTests (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/TestScheduler.js:333:13)
+        at runJest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/runJest.js:404:19)
+        at _run10000 (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/cli/index.js:320:7)
+        at runCLI (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/cli/index.js:173:3)
+        at Object.run (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-cli/build/cli/index.js:155:37)
+
+      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
+      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:70:28)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+
+  console.error
+    Error: Uncaught [ReferenceError: IntersectionObserver is not defined]
+        at reportException (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)
+        at innerInvokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
+        at invokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
+        at invokeGuardedCallback (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
+        at flushPassiveEffectsImpl (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23574:9)
+        at unstable_runWithPriority (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/scheduler/cjs/scheduler.development.js:468:12) ReferenceError: IntersectionObserver is not defined
+        at createObserver (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/src/observe.ts:71:22)
+        at observe (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/src/observe.ts:144:38)
+        at /home/runner/work/malika-portfolio/malika-portfolio/node_modules/src/useInView.tsx:66:19
+        at invokePassiveEffectCreate (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23487:20)
+        at HTMLUnknownElement.callCallback (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:3945:14)
+        at HTMLUnknownElement.callTheUserObjectsOperation (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+        at innerInvokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+        at invokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
+        at invokeGuardedCallback (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
+        at flushPassiveEffectsImpl (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23574:9)
+        at unstable_runWithPriority (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/scheduler/cjs/scheduler.development.js:468:12)
+        at runWithPriority$1 (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+        at flushPassiveEffects (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23447:14)
+        at Object.<anonymous>.flushWork (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom-test-utils.development.js:992:10)
+        at act (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom-test-utils.development.js:1107:9)
+        at render (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@testing-library/react/dist/pure.js:97:26)
+        at Object.<anonymous> (/home/runner/work/malika-portfolio/malika-portfolio/src/App.test.tsx:6:5)
+        at Promise.then.completed (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/utils.js:391:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/utils.js:316:10)
+        at _callCircusTest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:218:40)
+        at processTicksAndRejections (node:internal/process/task_queues:96:5)
+        at _runTest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:155:3)
+        at _runTestsForDescribeBlock (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:66:9)
+        at run (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:25:3)
+        at runAndTransformResultsToJestFormat (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+        at jestAdapter (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+        at runTestInternal (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-runner/build/runTest.js:389:16)
+        at runTest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-runner/build/runTest.js:475:34)
+        at TestRunner.runTests (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-runner/build/index.js:111:12)
+        at TestScheduler.scheduleTests (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/TestScheduler.js:333:13)
+        at runJest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/runJest.js:404:19)
+        at _run10000 (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/cli/index.js:320:7)
+        at runCLI (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/cli/index.js:173:3)
+        at Object.run (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-cli/build/cli/index.js:155:37)
+
+      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
+      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:70:28)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+
+  console.error
+    Error: Uncaught [ReferenceError: IntersectionObserver is not defined]
+        at reportException (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)
+        at innerInvokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
+        at invokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
+        at invokeGuardedCallback (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
+        at flushPassiveEffectsImpl (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23574:9)
+        at unstable_runWithPriority (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/scheduler/cjs/scheduler.development.js:468:12) ReferenceError: IntersectionObserver is not defined
+        at createObserver (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/src/observe.ts:71:22)
+        at observe (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/src/observe.ts:144:38)
+        at /home/runner/work/malika-portfolio/malika-portfolio/node_modules/src/useInView.tsx:66:19
+        at invokePassiveEffectCreate (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23487:20)
+        at HTMLUnknownElement.callCallback (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:3945:14)
+        at HTMLUnknownElement.callTheUserObjectsOperation (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+        at innerInvokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+        at invokeEventListeners (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
+        at invokeGuardedCallback (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
+        at flushPassiveEffectsImpl (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23574:9)
+        at unstable_runWithPriority (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/scheduler/cjs/scheduler.development.js:468:12)
+        at runWithPriority$1 (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+        at flushPassiveEffects (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom.development.js:23447:14)
+        at Object.<anonymous>.flushWork (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom-test-utils.development.js:992:10)
+        at act (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/react-dom/cjs/react-dom-test-utils.development.js:1107:9)
+        at render (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@testing-library/react/dist/pure.js:97:26)
+        at Object.<anonymous> (/home/runner/work/malika-portfolio/malika-portfolio/src/App.test.tsx:6:5)
+        at Promise.then.completed (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/utils.js:391:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/utils.js:316:10)
+        at _callCircusTest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:218:40)
+        at processTicksAndRejections (node:internal/process/task_queues:96:5)
+        at _runTest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:155:3)
+        at _runTestsForDescribeBlock (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:66:9)
+        at run (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/run.js:25:3)
+        at runAndTransformResultsToJestFormat (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+        at jestAdapter (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+        at runTestInternal (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-runner/build/runTest.js:389:16)
+        at runTest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-runner/build/runTest.js:475:34)
+        at TestRunner.runTests (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-runner/build/index.js:111:12)
+        at TestScheduler.scheduleTests (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/TestScheduler.js:333:13)
+        at runJest (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/runJest.js:404:19)
+        at _run10000 (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/cli/index.js:320:7)
+        at runCLI (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/@jest/core/build/cli/index.js:173:3)
+        at Object.run (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/jest-cli/build/cli/index.js:155:37)
+
+      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
+      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:70:28)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+
+  console.error
+    The above error occurred in the <App> component:
+    
+        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:196:52)
+    
+    Consider adding an error boundary to your tree to customize error handling behavior.
+    Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+      at logCapturedError (node_modules/react-dom/cjs/react-dom.development.js:20085:23)
+      at update.callback (node_modules/react-dom/cjs/react-dom.development.js:20118:5)
+      at callCallback (node_modules/react-dom/cjs/react-dom.development.js:12318:12)
+      at commitUpdateQueue (node_modules/react-dom/cjs/react-dom.development.js:12339:9)
+      at commitLifeCycles (node_modules/react-dom/cjs/react-dom.development.js:20736:11)
+      at commitLayoutEffects (node_modules/react-dom/cjs/react-dom.development.js:23426:7)
+      at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:3945:14)
+
+  console.error
+    The above error occurred in the <App> component:
+    
+        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:196:52)
+    
+    Consider adding an error boundary to your tree to customize error handling behavior.
+    Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+      at logCapturedError (node_modules/react-dom/cjs/react-dom.development.js:20085:23)
+      at update.callback (node_modules/react-dom/cjs/react-dom.development.js:20118:5)
+      at callCallback (node_modules/react-dom/cjs/react-dom.development.js:12318:12)
+      at commitUpdateQueue (node_modules/react-dom/cjs/react-dom.development.js:12339:9)
+      at commitLifeCycles (node_modules/react-dom/cjs/react-dom.development.js:20736:11)
+      at commitLayoutEffects (node_modules/react-dom/cjs/react-dom.development.js:23426:7)
+      at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:3945:14)
+
+  console.error
+    The above error occurred in the <App> component:
+    
+        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:196:52)
+    
+    Consider adding an error boundary to your tree to customize error handling behavior.
+    Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+      at logCapturedError (node_modules/react-dom/cjs/react-dom.development.js:20085:23)
+      at update.callback (node_modules/react-dom/cjs/react-dom.development.js:20118:5)
+      at callCallback (node_modules/react-dom/cjs/react-dom.development.js:12318:12)
+      at commitUpdateQueue (node_modules/react-dom/cjs/react-dom.development.js:12339:9)
+      at commitLifeCycles (node_modules/react-dom/cjs/react-dom.development.js:20736:11)
+      at commitLayoutEffects (node_modules/react-dom/cjs/react-dom.development.js:23426:7)
+      at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:3945:14)
+
+  console.error
+    The above error occurred in the <App> component:
+    
+        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:196:52)
+    
+    Consider adding an error boundary to your tree to customize error handling behavior.
+    Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+      at logCapturedError (node_modules/react-dom/cjs/react-dom.development.js:20085:23)
+      at update.callback (node_modules/react-dom/cjs/react-dom.development.js:20118:5)
+      at callCallback (node_modules/react-dom/cjs/react-dom.development.js:12318:12)
+      at commitUpdateQueue (node_modules/react-dom/cjs/react-dom.development.js:12339:9)
+      at commitLifeCycles (node_modules/react-dom/cjs/react-dom.development.js:20736:11)
+      at commitLayoutEffects (node_modules/react-dom/cjs/react-dom.development.js:23426:7)
+      at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:3945:14)
+
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (41 ms)
+  ✕ renders the course name somewhere (164 ms)
 
   ● renders the course name somewhere
 
-    TestingLibraryElementError: Unable to find an element with the text: /CISC275/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+    ReferenceError: IntersectionObserver is not defined
 
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"App"[39m
-        [36m>[39m
-          [36m<nav[39m
-            [33mclass[39m=[32m"navbar navbar-light bg-light px-3"[39m
-            [33mid[39m=[32m"navbar-example2"[39m
-          [36m>[39m
-            [36m<a[39m
-              [33mclass[39m=[32m"navbar-brand"[39m
-              [33mhref[39m=[32m"#"[39m
-            [36m>[39m
-              [0mNavbar[0m
-            [36m</a>[39m
-            [36m<ul[39m
-              [33mclass[39m=[32m"nav nav-pills"[39m
-            [36m>[39m
-              [36m<li[39m
-                [33mclass[39m=[32m"nav-item"[39m
-              [36m>[39m
-                [36m<a[39m
-                  [33mclass[39m=[32m"nav-link"[39m
-                  [33mhref[39m=[32m"#scrollspyHeading1"[39m
-                [36m>[39m
-                  [0mFirst[0m
-                [36m</a>[39m
-              [36m</li>[39m
-              [36m<li[39m
-                [33mclass[39m=[32m"nav-item"[39m
-              [36m>[39m
-                [36m<a[39m
-                  [33mclass[39m=[32m"nav-link"[39m
-                  [33mhref[39m=[32m"#scrollspyHeading2"[39m
-                [36m>[39m
-                  [0mSecond[0m
-                [36m</a>[39m
-              [36m</li>[39m
-              [36m<li[39m
-                [33mclass[39m=[32m"nav-item"[39m
-              [36m>[39m
-                [36m<a[39m
-                  [33mclass[39m=[32m"nav-link"[39m
-                  [33mhref[39m=[32m"#scrollspyHeading3"[39m
-                [36m>[39m
-                  [0mThird[0m
-                [36m</a>[39m
-              [36m</li>[39m
-              [36m<li[39m
-                [33mclass[39m=[32m"nav-item"[39m
-              [36m>[39m
-                [36m<a[39m
-                  [33mclass[39m=[32m"nav-link"[39m
-                  [33mhref[39m=[32m"#scrollspyHeading4"[39m
-                [36m>[39m
-                  [0mFourth[0m
-                [36m</a>[39m
-              [36m</li>[39m
-            [36m</ul>[39m
-          [36m</nav>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"scrollspy-example"[39m
-            [33mdata-bs-offset[39m=[32m"0"[39m
-            [33mdata-bs-spy[39m=[32m"scroll"[39m
-            [33mdata-bs-target[39m=[32m"#navbar-example2"[39m
-            [33mtabindex[39m=[32m"0"[39m
-          [36m/>[39m
-          [36m<header[39m
-            [33mclass[39m=[32m"App-header"[39m
-          [36m>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"animate__animated animate__bounceIn"[39m
-              [33mstyle[39m=[32m"animation-duration: 2s;"[39m
-            [36m>[39m
-              [0mWelcome to Malika Iyer’s Personal Website![0m
-            [36m</div>[39m
-          [36m</header>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"content"[39m
-          [36m>[39m
-            [36m<section[39m
-              [33mid[39m=[32m"scrollspyHeading1"[39m
-            [36m>[39m
-              [36m<h4>[39m
-                [0mAbout Me[0m
-              [36m</h4>[39m
-              [36m<p>[39m
-                [0mAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt i[0m
-              [36m</p>[39m
-            [36m</section>[39m
-            [36m<section[39m
-              [33mid[39m=[32m"scrollspyHeading2"[39m
-            [36m>[39m
-              [36m<h4>[39m
-                [0mSkills[0m
-              [36m</h4>[39m
-              [36m<p>[39m
-                [0mAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat[0m
-              [36m</p>[39m
-            [36m</section>[39m
-            [36m<section[39m
-              [33mid[39m=[32m"scrollspyHeading3"[39m
-            [36m>[39m
-              [36m<h4>[39m
-                [0mProjects[0m
-              [36m</h4>[39m
-              [36m<p>[39m
-                [0mAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut[0m
-              [36m</p>[39m
-            [36m</section>[39m
-            [36m<section[39m
-              [33mid[39m=[32m"scrollspyHeading4"[39m
-            [36m>[39m
-              [36m<h4>[39m
-                [0mLinks[0m
-              [36m</h4>[39m
-              [36m<p>[39m
-                [0mAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis[0m
-              [36m</p>[39m
-            [36m</section>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
+      4 |
+      5 | test("renders the course name somewhere", () => {
+    > 6 |     render(<App />);
+        |     ^
+      7 |     const linkElement = screen.getByText(/CISC275/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
 
-       5 | test("renders the course name somewhere", () => {
-       6 |     render(<App />);
-    >  7 |     const linkElement = screen.getByText(/CISC275/i);
-         |                                ^
-       8 |     expect(linkElement).toBeInTheDocument();
-       9 | });
-      10 |
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/App.test.tsx:7:32)
+      at createObserver (node_modules/src/observe.ts:71:22)
+      at observe (node_modules/src/observe.ts:144:38)
+      at node_modules/src/useInView.tsx:66:19
+      at invokePassiveEffectCreate (node_modules/react-dom/cjs/react-dom.development.js:23487:20)
+      at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:3945:14)
+      at HTMLUnknownElement.callTheUserObjectsOperation (node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+      at HTMLUnknownElement.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+      at Object.invokeGuardedCallbackDev (node_modules/react-dom/cjs/react-dom.development.js:3994:16)
+      at invokeGuardedCallback (node_modules/react-dom/cjs/react-dom.development.js:4056:31)
+      at flushPassiveEffectsImpl (node_modules/react-dom/cjs/react-dom.development.js:23574:9)
+      at unstable_runWithPriority (node_modules/scheduler/cjs/scheduler.development.js:468:12)
+      at runWithPriority$1 (node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom.development.js:23447:14)
+      at Object.<anonymous>.flushWork (node_modules/react-dom/cjs/react-dom-test-utils.development.js:992:10)
+      at act (node_modules/react-dom/cjs/react-dom-test-utils.development.js:1107:9)
+      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
+      at Object.<anonymous> (src/App.test.tsx:6:5)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -159,14 +364,14 @@ FAIL src/App.test.tsx
 ----------------|---------|----------|---------|---------|-------------------
 File            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------|---------|----------|---------|---------|-------------------
-All files       |     100 |      100 |     100 |     100 |                   
- src            |     100 |      100 |     100 |     100 |                   
-  App.tsx       |     100 |      100 |     100 |     100 |                   
- src/Components |     100 |      100 |     100 |     100 |                   
-  NavBar.tsx    |     100 |      100 |     100 |     100 |                   
+All files       |   83.87 |       50 |      75 |   83.87 |                   
+ src            |     100 |       50 |     100 |     100 |                   
+  App.tsx       |     100 |       50 |     100 |     100 | 80                
+ src/Components |       0 |      100 |       0 |       0 |                   
+  NavBar.tsx    |       0 |      100 |       0 |       0 | 12-52             
 ----------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        1.387 s
+Time:        2.141 s
 Ran all test suites.
