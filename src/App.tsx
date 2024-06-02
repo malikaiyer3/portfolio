@@ -13,7 +13,8 @@ import tsIcon from "./images/icons8-code-50.png";
 // import kotIcon from "./images/icons8-kotlin.svg";
 import sqlIcon from "./images/icons8-database-administrator-50.png";
 import backgroundImage from "./images/lagos-night.jpeg";
-
+import ProjectContainerCode from "./Components/ProjectContainerCode";
+import malikaHeadshot from "./images/headshot.jpg";
 
 const typing = keyframes`
     from { width: 0 }
@@ -35,7 +36,6 @@ const TypewriterText = styled.h1`
 
     animation: ${typing} 3.5s steps(40, end), ${blinkCaret} 0.75s step-end;
 `;
-
 
 const Header = styled.header`
     margin: 0;
@@ -116,11 +116,21 @@ const AboutContainer = styled.p`
     font-size: 1.2rem;
     display: flex;
     margin-bottom: 20px;
+    margin-right: 20px;
 `;
 
 const AboutImage = styled.img`
-    width: 200px;
+    width: 400px;
     height: auto;
+    margin-left: 20px;
+`;
+
+const AboutText = styled.p`
+    flex: 1;
+    text-align: top;
+    margin-left: 200 px;
+    text-align: left;
+    margin-bottom: 5px;
     margin-left: 20px;
 `;
 
@@ -161,59 +171,6 @@ const Topic = styled.div`
     font-weight: 500;
 `;
 /* Skills styling ends here */
-
-/* Projects section styling */
-const ProjectContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    text-align: left;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #333; /* Make sure project containers have a background to display the shadow */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19); /* Adjust shadow for better visibility */
-`;
-
-const ProjectImage = styled.img`
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-`;
-
-const ProjectTitle = styled.h3`
-    text-align: left;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-`;
-
-const ProjectDescription = styled.p`
-    text-align: left;
-    font-size: 1rem;
-    margin-bottom: 10px;
-`;
-
-const ProjectLinks = styled.div`
-    display: flex;
-    gap: 10px;
-`;
-
-const ProjectLink = styled.a`
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    background-color: #e0e0e0;
-    transition: background-color 0.3s;
-
-    &:hover {
-        background-color: #b36a5e;
-        color: white;
-    }
-`;
-/* Projects section styling ends here */
 
 const StyledHr = styled.hr`
     width: 50%;
@@ -303,7 +260,9 @@ function App(): JSX.Element {
             <Header>
                 <div>
                     <TypewriterText>
-                        <p>Hi I&apos;m Malika Iyer :)   Welcome to my Portfolio!</p>
+                        <p>
+                            Hi I&apos;m Malika Iyer :) Welcome to my Portfolio!
+                        </p>
                     </TypewriterText>
                 </div>
             </Header>
@@ -313,22 +272,22 @@ function App(): JSX.Element {
                 </h2>
                 <StyledHr />
                 <AboutContainer>
-                    Hello! I am Malika Iyer, a fourth year BS Computer Science
-                    student at the University of Delaware. I am interested in
-                    the fields of Human-Computer Interaction and Artificial
-                    Intelligence. I have experience as a software engineering
-                    intern at Mindsprint and as a research assistant at the
-                    Sensify Lab at UD. I hope to work in software engineering in
-                    the future, specifically on something that makes a
-                    real-world impact because I am passionate about social
-                    change and human rights. In my free time, I like to spend
-                    time with friends/family, do photography, listen to music,
-                    sing, or play the ukulele! I am an avid dog and cat lover
-                    but do not have any pets of my own (yet)!
-                    <AboutImage
-                        src="https://avatars.githubusercontent.com/u/44524659?v=4"
-                        alt="Image"
-                    />
+                    <AboutText>
+                        Hello! I am Malika Iyer, a fourth year BS Computer
+                        Science student at the University of Delaware. I am
+                        interested in the fields of Human-Computer Interaction
+                        and Artificial Intelligence. I have experience as a
+                        software engineering intern at Mindsprint and as a
+                        research assistant at the Sensify Lab at UD. I hope to
+                        work in software engineering in the future, specifically
+                        on something that makes a real-world impact because I am
+                        passionate about social change and human rights. In my
+                        free time, I like to spend time with friends/family, do
+                        photography, listen to music, sing, or play the ukulele!
+                        I am an avid dog and cat lover but do not have any pets
+                        of my own (yet)!
+                    </AboutText>
+                    <AboutImage src={malikaHeadshot} alt="Image" />
                 </AboutContainer>
             </Section>
             <Section id="skills" ref={skillsRef} inView={skillsInView}>
@@ -350,28 +309,7 @@ function App(): JSX.Element {
                     <b>Projects</b>
                 </h2>
                 <StyledHr />
-                <ProjectContainer>
-                    <ProjectImage src={ProjectImage} alt="Project Image" />
-                    <ProjectTitle>Project Title</ProjectTitle>
-                    <ProjectDescription>
-                        This is a short description of the project. It
-                        highlights the main features and functionalities.
-                    </ProjectDescription>
-                    <ProjectLinks>
-                        <ProjectLink
-                            href="https://github.com/yourusername/yourproject"
-                            target="_blank"
-                        >
-                            GitHub
-                        </ProjectLink>
-                        <ProjectLink
-                            href="https://yourproject.com"
-                            target="_blank"
-                        >
-                            Live Project
-                        </ProjectLink>
-                    </ProjectLinks>
-                </ProjectContainer>
+                <ProjectContainerCode />
             </Section>
             <Section id="contact" ref={contactRef} inView={contactInView}>
                 <h2>
