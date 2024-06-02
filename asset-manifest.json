@@ -1,17 +1,20 @@
 {
   "files": {
     "main.css": "/malika-portfolio/static/css/main.a8eacc0f.css",
-    "main.js": "/malika-portfolio/static/js/main.4366904e.js",
+    "main.js": "/malika-portfolio/static/js/main.9c85a719.js",
     "static/js/787.4ef7427d.chunk.js": "/malika-portfolio/static/js/787.4ef7427d.chunk.js",
+    "static/media/headshot.jpg": "/malika-portfolio/static/media/headshot.1a1091d3826dc0e8b814.jpg",
+    "static/media/proj-and101-app.png": "/malika-portfolio/static/media/proj-and101-app.32581ce0c4af5c7c4c96.png",
     "static/media/lagos-night.jpeg": "/malika-portfolio/static/media/lagos-night.6847d22daec7d5c4c1ae.jpeg",
     "static/media/Sobiscuit.ttf": "/malika-portfolio/static/media/Sobiscuit.82901903bec412a9b6e8.ttf",
+    "static/media/proj-sudoku.png": "/malika-portfolio/static/media/proj-sudoku.b4bbc8f9f463372f2c8c.png",
     "index.html": "/malika-portfolio/index.html",
     "main.a8eacc0f.css.map": "/malika-portfolio/static/css/main.a8eacc0f.css.map",
-    "main.4366904e.js.map": "/malika-portfolio/static/js/main.4366904e.js.map",
+    "main.9c85a719.js.map": "/malika-portfolio/static/js/main.9c85a719.js.map",
     "787.4ef7427d.chunk.js.map": "/malika-portfolio/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a8eacc0f.css",
-    "static/js/main.4366904e.js"
+    "static/js/main.9c85a719.js"
   ]
 }

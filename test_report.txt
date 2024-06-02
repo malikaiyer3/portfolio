@@ -6,11 +6,30 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
   console.error
+    Warning: validateDOMNesting(...): <p> cannot appear as a descendant of <p>.
+        at p
+        at I (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/styled-components/src/models/StyledComponent.ts:265:26)
+        at p
+        at I (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/styled-components/src/models/StyledComponent.ts:265:26)
+        at section
+        at I (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/styled-components/src/models/StyledComponent.ts:265:26)
+        at div
+        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:183:52)
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
+      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
+
+  console.error
     Warning: React does not recognize the `inView` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `inview` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
         at section
         at I (/home/runner/work/malika-portfolio/malika-portfolio/node_modules/styled-components/src/models/StyledComponent.ts:265:26)
         at div
-        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:226:52)
+        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:183:52)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -259,7 +278,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   console.error
     The above error occurred in the <App> component:
     
-        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:226:52)
+        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:183:52)
     
     Consider adding an error boundary to your tree to customize error handling behavior.
     Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
@@ -275,7 +294,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   console.error
     The above error occurred in the <App> component:
     
-        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:226:52)
+        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:183:52)
     
     Consider adding an error boundary to your tree to customize error handling behavior.
     Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
@@ -291,7 +310,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   console.error
     The above error occurred in the <App> component:
     
-        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:226:52)
+        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:183:52)
     
     Consider adding an error boundary to your tree to customize error handling behavior.
     Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
@@ -307,7 +326,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   console.error
     The above error occurred in the <App> component:
     
-        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:226:52)
+        at App (/home/runner/work/malika-portfolio/malika-portfolio/src/App.tsx:183:52)
     
     Consider adding an error boundary to your tree to customize error handling behavior.
     Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
@@ -321,7 +340,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:3945:14)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (175 ms)
+  ✕ renders the course name somewhere (211 ms)
 
   ● renders the course name somewhere
 
@@ -361,17 +380,18 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
-----------------|---------|----------|---------|---------|-------------------
-File            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------------|---------|----------|---------|---------|-------------------
-All files       |   85.71 |       50 |      75 |   85.71 |                   
- src            |     100 |       50 |     100 |     100 |                   
-  App.tsx       |     100 |       50 |     100 |     100 | 104               
- src/Components |       0 |      100 |       0 |       0 |                   
-  NavBar.tsx    |       0 |      100 |       0 |       0 | 12-52             
-----------------|---------|----------|---------|---------|-------------------
+---------------------------|---------|----------|---------|---------|-------------------
+File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+---------------------------|---------|----------|---------|---------|-------------------
+All files                  |   86.84 |       50 |      80 |   86.84 |                   
+ src                       |     100 |       50 |     100 |     100 |                   
+  App.tsx                  |     100 |       50 |     100 |     100 | 104               
+ src/Components            |   61.53 |      100 |      50 |   61.53 |                   
+  NavBar.tsx               |       0 |      100 |       0 |       0 | 12-52             
+  ProjectContainerCode.tsx |     100 |      100 |     100 |     100 |                   
+---------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.238 s
+Time:        2.368 s
 Ran all test suites.
