@@ -1,7 +1,8 @@
+/* eslint-disable no-extra-parens */
 /* eslint-disable prettier/prettier */
 import React from "react";
 import "./App.css";
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { Link } from "react-scroll";
 import { useInView } from "react-intersection-observer";
 import pyIcon from "./images/icons8-python-50.png";
@@ -13,11 +14,33 @@ import tsIcon from "./images/icons8-code-50.png";
 import sqlIcon from "./images/icons8-database-administrator-50.png";
 import backgroundImage from "./images/lagos-night.jpeg";
 
+
+const typing = keyframes`
+    from { width: 0 }
+    to { width: 100% }
+`;
+
+const blinkCaret = keyframes`
+    from, 10% { border-color: transparent } /* Caret is visible for the first 10% of the animation */
+    50% { border-color: orange; } /* Caret blinks orange for the middle 40% of the animation */
+    60%, to { border-color: transparent } /* Caret disappears for the last 10% of the animation */
+`;
+
+const TypewriterText = styled.h1`
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+
+    animation: ${typing} 3.5s steps(40, end), ${blinkCaret} 0.75s step-end;
+`;
+
+
 const Header = styled.header`
     margin: 0;
     padding: 0;
     height: 100vh;
-    // background-color: #095f35;
     background-image: url(${backgroundImage});
     background-size: cover;
     background-position: center;
@@ -27,7 +50,8 @@ const Header = styled.header`
     align-items: center;
     justify-content: center;
     font-size: calc(40px + 2vmin);
-    font-family: "Sobiscuit";
+    font-family: "Courier New";
+    font-weight: bold;
     color: white;
 `;
 
@@ -191,6 +215,12 @@ const ProjectLink = styled.a`
 `;
 /* Projects section styling ends here */
 
+const StyledHr = styled.hr`
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+`;
+
 function App(): JSX.Element {
     //animation code for each section
     const { ref: aboutRef, inView: aboutInView } = useInView({
@@ -271,15 +301,17 @@ function App(): JSX.Element {
                 </header>
             </HeaderComponent>
             <Header>
-                <div
-                    className="animate__animated animate__bounceIn"
-                    style={{ animationDuration: "2s" }}
-                >
-                    Welcome to Malika Iyer&rsquo;s Personal Website!
+                <div>
+                    <TypewriterText>
+                        <p>Hi I&apos;m Malika Iyer :)   Welcome to my Portfolio!</p>
+                    </TypewriterText>
                 </div>
             </Header>
             <Section id="about" ref={aboutRef} inView={aboutInView}>
-                <h2>About</h2>
+                <h2>
+                    <b>About</b>
+                </h2>
+                <StyledHr />
                 <AboutContainer>
                     Hello! I am Malika Iyer, a fourth year BS Computer Science
                     student at the University of Delaware. I am interested in
@@ -300,18 +332,24 @@ function App(): JSX.Element {
                 </AboutContainer>
             </Section>
             <Section id="skills" ref={skillsRef} inView={skillsInView}>
-                <h2>Skills</h2>
+                <h2>
+                    <b>Skills</b>
+                </h2>
+                <StyledHr />
                 <BoxesContainer>
-                    {skills.map((skill, index) => 
+                    {skills.map((skill, index) => (
                         <Box key={index}>
                             <Icon src={skill.icon} alt="Image" />
                             <Topic>{skill.name}</Topic>
                         </Box>
-                    )}
+                    ))}
                 </BoxesContainer>
             </Section>
             <Section id="projects" ref={projectsRef} inView={projectsInView}>
-                <h2>Projects</h2>
+                <h2>
+                    <b>Projects</b>
+                </h2>
+                <StyledHr />
                 <ProjectContainer>
                     <ProjectImage src={ProjectImage} alt="Project Image" />
                     <ProjectTitle>Project Title</ProjectTitle>
@@ -336,7 +374,10 @@ function App(): JSX.Element {
                 </ProjectContainer>
             </Section>
             <Section id="contact" ref={contactRef} inView={contactInView}>
-                <h2>Contact</h2>
+                <h2>
+                    <b>Contact</b>
+                </h2>
+                <StyledHr />
                 <p>Email: malika@udel.edu</p>
             </Section>
         </div>
