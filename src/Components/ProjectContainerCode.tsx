@@ -4,6 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import projNearbyeats from "../images/proj-and101-app.png";
 import projSudoku from "../images/proj-sudoku.png";
+import projaccessitech from "../images/proj-accessitech.png";
 
 const ProjectContainer = styled.div`
     display: flex;
@@ -128,25 +129,23 @@ function ProjectContainerCode() {
                     <ProjectDescription>
                         An 8-puzzle solver created using Lisp. This program
                         solves any given 8-puzzle using a heuristic search
-                        algorithm. The program takes input in the form of a 2D
-                        array.
+                        algorithm. The program takes the initial input and a
+                        goal output and outputs the step-by-step solution used
+                        to solve the puzzle. The different algorithms
+                        implemented are Depth Iterative Search, Breadth First
+                        Search, and A*, and the heuristics implemented are
+                        manhattan distance and misplaced tiles.
                     </ProjectDescription>
                     <ProjectLinks>
                         <ProjectLink
-                            href="https://github.com/and101-final-proj-group18/and101-final-project.git"
+                            href="https://github.com/malikaiyer/8-puzzle-solver.git"
                             target="_blank"
                         >
                             GitHub
                         </ProjectLink>
-                        <ProjectLink
-                            href="https://www.youtube.com/watch?v=zc6o96Qe0UU"
-                            target="_blank"
-                        >
-                            Video Demo
-                        </ProjectLink>
                     </ProjectLinks>
                 </ProjectDetails>
-                <ProjectImage src={projNearbyeats} alt="Project Image" />
+                {/* <ProjectImage src={projNearbyeats} alt="Project Image" /> */}
             </ProjectContainer>
 
             <ProjectContainer>
@@ -159,7 +158,8 @@ function ProjectContainerCode() {
                         uses a map API to display accessible locations in the
                         user&apos;s area and also features a chat feature to
                         connect users with disabilities to others who can help
-                        or provide support in their area.
+                        or provide support in their area. We won the category of
+                        best use of Smalltalk.
                     </ProjectDescription>
                     <ProjectLinks>
                         <ProjectLink
@@ -176,7 +176,7 @@ function ProjectContainerCode() {
                         </ProjectLink>
                     </ProjectLinks>
                 </ProjectDetails>
-                <ProjectImage src={projNearbyeats} alt="Project Image" />
+                <ProjectImage src={projaccessitech} alt="Project Image" />
             </ProjectContainer>
         </div>
     );
