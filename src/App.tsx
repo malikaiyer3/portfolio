@@ -16,6 +16,7 @@ import sqlIcon from "./images/icons8-database-administrator-50.png";
 import backgroundImage from "./images/lagos-night.jpeg";
 import ProjectContainerCode from "./Components/ProjectContainerCode";
 import malikaHeadshot from "./images/headshot.jpg";
+import ExperienceContainer from "./Components/ExperienceContainerCode";
 
 const typing = keyframes`
     from { width: 0 }
@@ -215,6 +216,9 @@ function App(): JSX.Element {
     const { ref: contactRef, inView: contactInView } = useInView({
         triggerOnce: true
     });
+    const { ref: experienceRef, inView: experienceInView } = useInView({
+        triggerOnce: true
+    });
 
     //skills array
     const skills = [
@@ -337,6 +341,13 @@ function App(): JSX.Element {
                 <StyledHr />
                 <ProjectContainerCode />
             </Section>
+            <Section id="experience" ref={experienceRef} inView={experienceInView}>
+                <h2>
+                    <b>Relevant Experience</b>
+                </h2>
+                <StyledHr />
+                <ExperienceContainer />
+            </Section>
             <Section id="contact" ref={contactRef} inView={contactInView}>
                 <h2>
                     <b>Contact</b>
@@ -344,13 +355,13 @@ function App(): JSX.Element {
                 <StyledHr />
                 <p>Email: malika@udel.edu</p>
                 <p>
-                    Linkedin: 
+                    Linkedin:
                     <a
-                        href= "https://www.linkedin.com/in/malikaiyer/"
+                        href="https://www.linkedin.com/in/malikaiyer/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                         malika-iyer
+                        malikaiyer
                     </a>
                 </p>
             </Section>
