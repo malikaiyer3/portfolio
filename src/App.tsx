@@ -1,6 +1,7 @@
 /* eslint-disable no-extra-parens */
 /* eslint-disable prettier/prettier */
 import React from "react";
+import { Helmet } from "react-helmet";
 import "./App.css";
 import styled, { css, keyframes } from "styled-components";
 import { Link } from "react-scroll";
@@ -205,6 +206,9 @@ function App(): JSX.Element {
 
     return (
         <div className="App">
+            <Helmet>
+                <title>Malika Portfolio</title>
+            </Helmet>
             <HeaderComponent>
                 <header>
                     <nav>
@@ -317,6 +321,16 @@ function App(): JSX.Element {
                 </h2>
                 <StyledHr />
                 <p>Email: malika@udel.edu</p>
+                <p>
+                    Linkedin: 
+                    <a
+                        href= "https://www.linkedin.com/in/malika-iyer/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                         malika-iyer
+                    </a>
+                </p>
             </Section>
         </div>
     );
