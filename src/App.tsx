@@ -121,9 +121,14 @@ const AboutContainer = styled.p`
 `;
 
 const AboutImage = styled.img`
-    width: 400px;
-    height: auto;
+    width: 100%; /* Scale down with the container */
+    max-height: 180px; /* Limit the height to prevent overflow */
+    width: auto;
     margin-left: 20px;
+
+    @media (max-width: 768px) {
+        margin-left: 0; /* Adjust margin for smaller screens */
+    }
 `;
 
 const AboutText = styled.p`
@@ -133,6 +138,15 @@ const AboutText = styled.p`
     text-align: left;
     margin-bottom: 5px;
     margin-left: 20px;
+    overflow-wrap: break-word;
+
+    @media (max-width: 768px) {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.9rem; /* Further adjust for very small screens */
+    }
 `;
 
 /* Skills Section  */
@@ -157,6 +171,14 @@ const Box = styled.div`
     &:hover {
         background-color: var(--primary-color);
         color: var(--white-color) !important;
+    }
+
+    @media (max-width: 768px) {
+        width: calc(100% / 2 - 20px); /* Adjust width for smaller screens */
+    }
+
+    @media (max-width: 480px) {
+        width: 100%; /* Full width on very small screens */
     }
 `;
 
@@ -324,7 +346,7 @@ function App(): JSX.Element {
                 <p>
                     Linkedin: 
                     <a
-                        href= "https://www.linkedin.com/in/malika-iyer/"
+                        href= "https://www.linkedin.com/in/malikaiyer/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

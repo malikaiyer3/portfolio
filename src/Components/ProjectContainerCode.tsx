@@ -11,7 +11,7 @@ const ProjectContainer = styled.div`
     align-items: left;
     text-align: left;
     margin-bottom: 20px;
-    height: 200px;
+    height: auto;
     padding: 20px;
     border-radius: 10px;
     background-color: #333; /* Make sure project containers have a background to display the shadow */
@@ -27,7 +27,7 @@ const ProjectDetails = styled.div`
 
 const ProjectImage = styled.img`
     width: auto;
-    height: auto;
+    max-height: 180px;
     border-radius: 10px;
     margin-left: auto; /* Move the image to the right */
     margin-bottom: 5px;
