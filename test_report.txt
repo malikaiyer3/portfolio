@@ -14,7 +14,7 @@ Browserslist: caniuse-lite is outdated. Please run:
         at section
         at I (/home/runner/work/portfolio/portfolio/node_modules/styled-components/src/models/StyledComponent.ts:265:26)
         at div
-        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:184:52)
+        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:206:52)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -29,7 +29,7 @@ Browserslist: caniuse-lite is outdated. Please run:
         at section
         at I (/home/runner/work/portfolio/portfolio/node_modules/styled-components/src/models/StyledComponent.ts:265:26)
         at div
-        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:184:52)
+        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:206:52)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -278,7 +278,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   console.error
     The above error occurred in the <App> component:
     
-        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:184:52)
+        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:206:52)
     
     Consider adding an error boundary to your tree to customize error handling behavior.
     Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
@@ -294,7 +294,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   console.error
     The above error occurred in the <App> component:
     
-        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:184:52)
+        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:206:52)
     
     Consider adding an error boundary to your tree to customize error handling behavior.
     Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
@@ -310,7 +310,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   console.error
     The above error occurred in the <App> component:
     
-        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:184:52)
+        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:206:52)
     
     Consider adding an error boundary to your tree to customize error handling behavior.
     Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
@@ -326,7 +326,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   console.error
     The above error occurred in the <App> component:
     
-        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:184:52)
+        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:206:52)
     
     Consider adding an error boundary to your tree to customize error handling behavior.
     Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
@@ -340,7 +340,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:3945:14)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (224 ms)
+  ✕ renders the course name somewhere (215 ms)
 
   ● renders the course name somewhere
 
@@ -393,5 +393,5 @@ All files                  |   86.84 |       50 |      80 |   86.84 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.454 s
+Time:        2.411 s
 Ran all test suites.
