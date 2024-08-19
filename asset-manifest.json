@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.33c43b35.css",
-    "main.js": "/portfolio/static/js/main.e063efe6.js",
+    "main.js": "/portfolio/static/js/main.043dfaca.js",
     "static/js/787.4ef7427d.chunk.js": "/portfolio/static/js/787.4ef7427d.chunk.js",
     "static/media/headshot.jpg": "/portfolio/static/media/headshot.1a1091d3826dc0e8b814.jpg",
-    "static/media/proj-and101-app.png": "/portfolio/static/media/proj-and101-app.32581ce0c4af5c7c4c96.png",
+    "static/media/proj-and101-app.png": "/portfolio/static/media/proj-and101-app.3fa89067c7484a5f23f5.png",
     "static/media/lagos-night.jpeg": "/portfolio/static/media/lagos-night.6847d22daec7d5c4c1ae.jpeg",
     "static/media/proj-accessitech.png": "/portfolio/static/media/proj-accessitech.4700258b831b89ad3539.png",
     "static/media/Sobiscuit.ttf": "/portfolio/static/media/Sobiscuit.82901903bec412a9b6e8.ttf",
     "static/media/proj-sudoku.png": "/portfolio/static/media/proj-sudoku.b4bbc8f9f463372f2c8c.png",
     "index.html": "/portfolio/index.html",
     "main.33c43b35.css.map": "/portfolio/static/css/main.33c43b35.css.map",
-    "main.e063efe6.js.map": "/portfolio/static/js/main.e063efe6.js.map",
+    "main.043dfaca.js.map": "/portfolio/static/js/main.043dfaca.js.map",
     "787.4ef7427d.chunk.js.map": "/portfolio/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33c43b35.css",
-    "static/js/main.e063efe6.js"
+    "static/js/main.043dfaca.js"
   ]
 }
