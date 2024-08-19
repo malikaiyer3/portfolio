@@ -14,7 +14,7 @@ Browserslist: caniuse-lite is outdated. Please run:
         at section
         at I (/home/runner/work/portfolio/portfolio/node_modules/styled-components/src/models/StyledComponent.ts:265:26)
         at div
-        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:206:52)
+        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:207:52)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -29,7 +29,7 @@ Browserslist: caniuse-lite is outdated. Please run:
         at section
         at I (/home/runner/work/portfolio/portfolio/node_modules/styled-components/src/models/StyledComponent.ts:265:26)
         at div
-        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:206:52)
+        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:207:52)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -276,9 +276,68 @@ Browserslist: caniuse-lite is outdated. Please run:
       at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
 
   console.error
+    Error: Uncaught [ReferenceError: IntersectionObserver is not defined]
+        at reportException (/home/runner/work/portfolio/portfolio/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)
+        at innerInvokeEventListeners (/home/runner/work/portfolio/portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
+        at invokeEventListeners (/home/runner/work/portfolio/portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/home/runner/work/portfolio/portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/home/runner/work/portfolio/portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/home/runner/work/portfolio/portfolio/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/home/runner/work/portfolio/portfolio/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
+        at invokeGuardedCallback (/home/runner/work/portfolio/portfolio/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
+        at flushPassiveEffectsImpl (/home/runner/work/portfolio/portfolio/node_modules/react-dom/cjs/react-dom.development.js:23574:9)
+        at unstable_runWithPriority (/home/runner/work/portfolio/portfolio/node_modules/scheduler/cjs/scheduler.development.js:468:12) ReferenceError: IntersectionObserver is not defined
+        at createObserver (/home/runner/work/portfolio/portfolio/node_modules/src/observe.ts:71:22)
+        at observe (/home/runner/work/portfolio/portfolio/node_modules/src/observe.ts:144:38)
+        at /home/runner/work/portfolio/portfolio/node_modules/src/useInView.tsx:66:19
+        at invokePassiveEffectCreate (/home/runner/work/portfolio/portfolio/node_modules/react-dom/cjs/react-dom.development.js:23487:20)
+        at HTMLUnknownElement.callCallback (/home/runner/work/portfolio/portfolio/node_modules/react-dom/cjs/react-dom.development.js:3945:14)
+        at HTMLUnknownElement.callTheUserObjectsOperation (/home/runner/work/portfolio/portfolio/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+        at innerInvokeEventListeners (/home/runner/work/portfolio/portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+        at invokeEventListeners (/home/runner/work/portfolio/portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/home/runner/work/portfolio/portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/home/runner/work/portfolio/portfolio/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/home/runner/work/portfolio/portfolio/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/home/runner/work/portfolio/portfolio/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
+        at invokeGuardedCallback (/home/runner/work/portfolio/portfolio/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
+        at flushPassiveEffectsImpl (/home/runner/work/portfolio/portfolio/node_modules/react-dom/cjs/react-dom.development.js:23574:9)
+        at unstable_runWithPriority (/home/runner/work/portfolio/portfolio/node_modules/scheduler/cjs/scheduler.development.js:468:12)
+        at runWithPriority$1 (/home/runner/work/portfolio/portfolio/node_modules/react-dom/cjs/react-dom.development.js:11276:10)
+        at flushPassiveEffects (/home/runner/work/portfolio/portfolio/node_modules/react-dom/cjs/react-dom.development.js:23447:14)
+        at Object.<anonymous>.flushWork (/home/runner/work/portfolio/portfolio/node_modules/react-dom/cjs/react-dom-test-utils.development.js:992:10)
+        at act (/home/runner/work/portfolio/portfolio/node_modules/react-dom/cjs/react-dom-test-utils.development.js:1107:9)
+        at render (/home/runner/work/portfolio/portfolio/node_modules/@testing-library/react/dist/pure.js:97:26)
+        at Object.<anonymous> (/home/runner/work/portfolio/portfolio/src/App.test.tsx:6:5)
+        at Promise.then.completed (/home/runner/work/portfolio/portfolio/node_modules/jest-circus/build/utils.js:391:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (/home/runner/work/portfolio/portfolio/node_modules/jest-circus/build/utils.js:316:10)
+        at _callCircusTest (/home/runner/work/portfolio/portfolio/node_modules/jest-circus/build/run.js:218:40)
+        at processTicksAndRejections (node:internal/process/task_queues:96:5)
+        at _runTest (/home/runner/work/portfolio/portfolio/node_modules/jest-circus/build/run.js:155:3)
+        at _runTestsForDescribeBlock (/home/runner/work/portfolio/portfolio/node_modules/jest-circus/build/run.js:66:9)
+        at run (/home/runner/work/portfolio/portfolio/node_modules/jest-circus/build/run.js:25:3)
+        at runAndTransformResultsToJestFormat (/home/runner/work/portfolio/portfolio/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+        at jestAdapter (/home/runner/work/portfolio/portfolio/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+        at runTestInternal (/home/runner/work/portfolio/portfolio/node_modules/jest-runner/build/runTest.js:389:16)
+        at runTest (/home/runner/work/portfolio/portfolio/node_modules/jest-runner/build/runTest.js:475:34)
+        at TestRunner.runTests (/home/runner/work/portfolio/portfolio/node_modules/jest-runner/build/index.js:111:12)
+        at TestScheduler.scheduleTests (/home/runner/work/portfolio/portfolio/node_modules/@jest/core/build/TestScheduler.js:333:13)
+        at runJest (/home/runner/work/portfolio/portfolio/node_modules/@jest/core/build/runJest.js:404:19)
+        at _run10000 (/home/runner/work/portfolio/portfolio/node_modules/@jest/core/build/cli/index.js:320:7)
+        at runCLI (/home/runner/work/portfolio/portfolio/node_modules/@jest/core/build/cli/index.js:173:3)
+        at Object.run (/home/runner/work/portfolio/portfolio/node_modules/jest-cli/build/cli/index.js:155:37)
+
+      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
+      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:70:28)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+
+  console.error
     The above error occurred in the <App> component:
     
-        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:206:52)
+        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:207:52)
     
     Consider adding an error boundary to your tree to customize error handling behavior.
     Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
@@ -294,7 +353,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   console.error
     The above error occurred in the <App> component:
     
-        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:206:52)
+        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:207:52)
     
     Consider adding an error boundary to your tree to customize error handling behavior.
     Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
@@ -310,7 +369,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   console.error
     The above error occurred in the <App> component:
     
-        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:206:52)
+        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:207:52)
     
     Consider adding an error boundary to your tree to customize error handling behavior.
     Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
@@ -326,7 +385,23 @@ Browserslist: caniuse-lite is outdated. Please run:
   console.error
     The above error occurred in the <App> component:
     
-        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:206:52)
+        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:207:52)
+    
+    Consider adding an error boundary to your tree to customize error handling behavior.
+    Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+      at logCapturedError (node_modules/react-dom/cjs/react-dom.development.js:20085:23)
+      at update.callback (node_modules/react-dom/cjs/react-dom.development.js:20118:5)
+      at callCallback (node_modules/react-dom/cjs/react-dom.development.js:12318:12)
+      at commitUpdateQueue (node_modules/react-dom/cjs/react-dom.development.js:12339:9)
+      at commitLifeCycles (node_modules/react-dom/cjs/react-dom.development.js:20736:11)
+      at commitLayoutEffects (node_modules/react-dom/cjs/react-dom.development.js:23426:7)
+      at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:3945:14)
+
+  console.error
+    The above error occurred in the <App> component:
+    
+        at App (/home/runner/work/portfolio/portfolio/src/App.tsx:207:52)
     
     Consider adding an error boundary to your tree to customize error handling behavior.
     Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
@@ -340,7 +415,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:3945:14)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (215 ms)
+  ✕ renders the course name somewhere (251 ms)
 
   ● renders the course name somewhere
 
@@ -380,18 +455,19 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
----------------------------|---------|----------|---------|---------|-------------------
-File                       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------------------|---------|----------|---------|---------|-------------------
-All files                  |   86.84 |       50 |      80 |   86.84 |                   
- src                       |     100 |       50 |     100 |     100 |                   
-  App.tsx                  |     100 |       50 |     100 |     100 | 105               
- src/Components            |   61.53 |      100 |      50 |   61.53 |                   
-  NavBar.tsx               |       0 |      100 |       0 |       0 | 12-52             
-  ProjectContainerCode.tsx |     100 |      100 |     100 |     100 |                   
----------------------------|---------|----------|---------|---------|-------------------
+------------------------------|---------|----------|---------|---------|-------------------
+File                          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+------------------------------|---------|----------|---------|---------|-------------------
+All files                     |   89.13 |       50 |   83.33 |   89.13 |                   
+ src                          |     100 |       50 |     100 |     100 |                   
+  App.tsx                     |     100 |       50 |     100 |     100 | 106               
+ src/Components               |      75 |      100 |   66.66 |      75 |                   
+  ExperienceContainerCode.tsx |     100 |      100 |     100 |     100 |                   
+  NavBar.tsx                  |       0 |      100 |       0 |       0 | 12-52             
+  ProjectContainerCode.tsx    |     100 |      100 |     100 |     100 |                   
+------------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.411 s
+Time:        2.579 s
 Ran all test suites.
