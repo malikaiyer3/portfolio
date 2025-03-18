@@ -306,10 +306,7 @@ function App(): JSX.Element {
                         interested in the fields of Human-Computer Interaction
                         and Artificial Intelligence. I have experience as a
                         software engineering intern at Mindsprint and as a
-                        research assistant at the Sensify Lab at UD. I hope to
-                        work in software engineering in the future, specifically
-                        on something that makes a real-world impact because I am
-                        passionate about social change and human rights. In my
+                        research assistant at the Sensify Lab at UD. In my
                         free time, I like to spend time with friends/family, do
                         photography, listen to music, sing, or play the ukulele!
                         I am an avid dog and cat lover but do not have any pets
