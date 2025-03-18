@@ -1,7 +1,7 @@
 /* eslint-disable no-extra-parens */
 /* eslint-disable prettier/prettier */
 import React from "react";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import "./App.css";
 import styled, { css, keyframes } from "styled-components";
 import { Link } from "react-scroll";
@@ -232,9 +232,7 @@ function App(): JSX.Element {
 
     return (
         <div className="App">
-            <Helmet>
-                <title>Malika Portfolio</title>
-            </Helmet>
+            <title>Malika Portfolio</title>
             <HeaderComponent>
                 <header>
                     <nav>
