@@ -1,6 +1,8 @@
 import React, { ReactNode } from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
+import { Link as RouterNavLink } from "react-router-dom";
+
 //npm i react-scroll
 //npm i --save-dev @types/react-scroll
 //npm i styled-components
@@ -48,6 +50,18 @@ const NavLink = styled(Link)`
     }
 `;
 
+const StyledRouterNavLink = styled(RouterNavLink)`
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #b36a5e;
+    }
+`;
+
 function Header({ children }: HeaderProps) {
     return (
         <HeaderComponent>
@@ -78,6 +92,11 @@ function Header({ children }: HeaderProps) {
                             >
                                 Projects
                             </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <StyledRouterNavLink to="/leadership">
+                                Leadership
+                            </StyledRouterNavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink

@@ -3,6 +3,7 @@
 import React from "react";
 // import { Helmet } from "react-helmet";
 import "./App.css";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import styled, { css, keyframes } from "styled-components";
 import { Link } from "react-scroll";
 import { useInView } from "react-intersection-observer";
@@ -17,6 +18,7 @@ import backgroundImage from "./images/lagos-night.jpeg";
 import ProjectContainerCode from "./Components/ProjectContainerCode";
 import malikaHeadshot from "./images/headshot.jpg";
 import ExperienceContainer from "./Components/ExperienceContainerCode";
+import Leadership from "./Components/LeadershipPage";
 
 const typing = keyframes`
     from { width: 0 }
@@ -114,7 +116,7 @@ const Section = styled.section<{ inView: boolean }>`
     margin-bottom: 20px; /* Add space between sections for shadows to be visible */
 `;
 
-const AboutContainer = styled.p`
+const AboutContainer = styled.div`
     font-size: 1.2rem;
     display: flex;
     margin-bottom: 20px;
@@ -271,6 +273,9 @@ function App(): JSX.Element {
                                 </NavLink>
                             </NavItem>
                             <NavItem>
+                                <NavLink to="/leadership">Leadership</NavLink>
+                            </NavItem>
+                            <NavItem>
                                 <NavLink
                                     activeClass="active"
                                     smooth
@@ -285,6 +290,11 @@ function App(): JSX.Element {
                     </nav>
                 </header>
             </HeaderComponent>
+            <Router>
+                <Routes>
+                    <Route path="/leadership" element={<Leadership />} />
+                </Routes>
+            </Router>
             <Header>
                 <div>
                     <TypewriterText>
@@ -306,8 +316,8 @@ function App(): JSX.Element {
                         interested in the fields of Human-Computer Interaction
                         and Artificial Intelligence. I have experience as a
                         software engineering intern at Mindsprint and as a
-                        research assistant at the Sensify Lab at UD. In my
-                        free time, I like to spend time with friends/family, do
+                        research assistant at the Sensify Lab at UD. In my free
+                        time, I like to spend time with friends/family, do
                         photography, listen to music, sing, or play the ukulele!
                         I am an avid dog and cat lover but do not have any pets
                         of my own (yet)!
@@ -336,7 +346,11 @@ function App(): JSX.Element {
                 <StyledHr />
                 <ProjectContainerCode />
             </Section>
-            <Section id="experience" ref={experienceRef} inView={experienceInView}>
+            <Section
+                id="experience"
+                ref={experienceRef}
+                inView={experienceInView}
+            >
                 <h2>
                     <b>Relevant Experience</b>
                 </h2>
